@@ -7,12 +7,14 @@ namespace Fibbonacci
     {
         static void Main(string[] args)
         {
-            for (var i = 0; i < 10; i++)
-            {
-                Console.WriteLine(GetFibonacciNumber(i));
-            }
+            // Sequence 
+            WriteOutFinbonacciSeries(length: 10);
 
-            WriteOutFinbonacciSeries(10);
+            Console.WriteLine();
+
+            // Specific number
+            var number =  GetFibonacciNumber(index: 7);
+            Console.WriteLine(number);
         }
 
         static int GetFibonacciNumber(int index)
