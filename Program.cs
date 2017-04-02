@@ -18,13 +18,13 @@ namespace Fibbonacci
         }
 
         static void WriteOutFibonacciSequence(int length)
-        {
+        {          
             if (length >= 0) Console.Write("0 ");
             if (length >= 1) Console.Write("1 ");
 
             int n2 = 0, // f(n-2)
                 n1 = 1; // f(n-1)
-
+            
             for (var i = 2; i < length; i++)
             {
                 var n = n1 + n2; // f(n) = f(n-1) + f(n-2)
